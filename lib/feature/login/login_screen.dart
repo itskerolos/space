@@ -18,32 +18,28 @@ class LoginScreen extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 children: [
                   Image.asset(
-                      "assets/images/login_img.png",
+                    "assets/images/login_img.png",
                     width: double.infinity,
                     height: double.infinity,
                     fit: BoxFit.cover,
                   ),
                   Positioned(
                     left: 16,
-                      child: Text(
-                          "Explore\nThe\nUniverse",
-                          style: AppStyles.loginTitle,
-                      ),
+                    child: Text(
+                      "Explore\nThe\nUniverse",
+                      style: AppStyles.loginTitle,
+                    ),
                   ),
                 ],
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              left: 16,
-              right: 16,
-              bottom: 22,
-            ),
+            padding: const EdgeInsets.only(left: 16, right: 16, bottom: 22),
             child: CustomButton(
-                buttonText: "Explore",
-              onPressed: (){
-                  Navigator.pushReplacementNamed(context, AppRoutes.homeRoute);
+              buttonText: "Explore",
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, AppRoutes.homeRoute);
               },
             ),
           ),
