@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 22),
             child: CustomButton(
-              buttonText: "Explore",
+              buttonText: "explore",
               onPressed: () {
                 Navigator.pushReplacementNamed(context, AppRoutes.homeRoute);
               },
